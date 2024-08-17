@@ -106,4 +106,43 @@ GOOD LUCK 😀
 // //type coercion
 // console.log("I am " + 23 + " years old");
 
-//5 Falsy Values:
+//5 Falsy Values: 0, '', undefined, null, NaN
+//NaN is actually a number but it is a "Not a Number" value.
+
+// console.log(Boolean(0));
+// console.log(Boolean(undefined));
+// console.log(Boolean({}));
+// console.log(Boolean(""));
+// console.log(Boolean(null));
+// console.log(Boolean(NaN));
+
+// //we never use this function Boolean, just to show falsy statement above!
+
+// const money = 2;
+// if (money && money != String) {
+//   console.log("Don't spend it all;");
+// } else {
+//   console.log("You should get a job!");
+// }
+
+// const age = 19;
+// age === 18 ? console.log(`Hello`) : console.log("Nope");
+
+// //avoid using loose equality operator to have clean code as much as possible, use strict equality operator instead ===.
+// //pretend == does not exist!
+
+// const favorite = Number(prompt("What is your favorite number?"));
+// console.log(favorite);
+// console.log(typeof favorite);
+
+// if (favorite === 23) {
+//   console.log("Cool! 23 is an amazing number");
+// } else if (favorite === 7) {
+//   console.log("Cool 7 is nice");
+// } else {
+//   console.log("number is not 23 or 7");
+// }
+
+//Basic Boolean Logic: The and, or & not Operator
+
+//Logical Operator
