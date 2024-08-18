@@ -198,3 +198,48 @@ GOOD LUCK 😀
 // }
 
 // // Switch statement is designed for checking equality (same value then call result and break the code)
+
+//expression and statement in javascript:
+//
+//expression: 3+4 , 1991, true && false !false
+//expression produces a boolean value
+//statement is like a complete sentence such as if else statement, switch statement, it does not produce a value but declares and performs action
+
+//in template literal we can only put expression and not statements, expression such as simple math calculation, number, strings, but variable is a "expression" so we can make a function a variable? let's check later.
+
+//conditional operator (ternary operator because it has 3 parts!) an operator produces a value so it is an expression!, we can put it inside a template literal, we can declare it as a variable! (const drink)
+
+// const age = 20;
+
+// const drink = age >= 18 ? "I like to drink wine" : "I love to drink juice";
+
+// console.log(`I like to drink ${drink}`);
+
+// const bill = 400;
+// const tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.25;
+
+// console.log(
+//   `The bill was ${bill}, the tip was ${tip} and the total value is ${
+//     bill + tip
+//   }`
+// );
+// strict - mode - easier to write secure javascript code
+"use strict";
+// excample if a variable isnt pre-defined then it will create an error, help fix bug if we mispelled a variable! also reserves some variable name reserved already
+
+// let hasDriversLicense = false;
+// const passTest = true;
+
+// if (passTest) hasDriversLicense = true;
+// if (hasDriversLicense) console.log("I can drive");
+
+//functions
+function fruitProcessor(apples, oranges) {
+  return `${apples} and ${oranges}`;
+}
+
+console.log(fruitProcessor("candy", "oranges"));
+
+const calcAge2 = () => 2032 - 1;
+
+console.log(calcAge2());
