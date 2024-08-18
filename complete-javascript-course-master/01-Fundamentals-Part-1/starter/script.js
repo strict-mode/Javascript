@@ -234,12 +234,33 @@ GOOD LUCK 😀
 // if (hasDriversLicense) console.log("I can drive");
 
 //functions
-function fruitProcessor(apples, oranges) {
-  return `${apples} and ${oranges}`;
-}
+// function fruitProcessor(apples, oranges) {
+//   return `${apples} and ${oranges}`;
+// }
 
-console.log(fruitProcessor("candy", "oranges"));
+// console.log(fruitProcessor("candy", "oranges"));
 
-const calcAge2 = () => 2032 - 1;
+// const calcAge2 = () => 2032 - 1;
 
-console.log(calcAge2());
+// console.log(calcAge2());
+
+//Function calling other functions
+//*function declaration, function expression, arrow function*
+//video 1 @ 6:14:23 - Functions Review: Anatomy of a Function
+
+const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
+
+const dolphinsAvg = calcAverage(85, 54, 41);
+console.log(dolphinsAvg);
+const koalasAvg = calcAverage(23, 24, 27);
+console.log(koalasAvg);
+
+const checkWinner = function (avgDolphins, avgKoalas) {
+  if (avgDolphins >= avgKoalas * 2) {
+    console.log("Dolphin wins");
+  } else if (avgKoalas >= avgDolphins * 2) {
+    console.log("Koalas win");
+  } else console.log("no winner");
+};
+
+checkWinner(dolphinsAvg, koalasAvg);
