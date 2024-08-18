@@ -248,19 +248,54 @@ GOOD LUCK 😀
 //*function declaration, function expression, arrow function*
 //video 1 @ 6:14:23 - Functions Review: Anatomy of a Function
 
-const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
+// const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
 
-const dolphinsAvg = calcAverage(85, 54, 41);
-console.log(dolphinsAvg);
-const koalasAvg = calcAverage(23, 24, 27);
-console.log(koalasAvg);
+// const dolphinsAvg = calcAverage(85, 54, 41);
+// console.log(dolphinsAvg);
+// const koalasAvg = calcAverage(23, 24, 27);
+// console.log(koalasAvg);
 
-const checkWinner = function (avgDolphins, avgKoalas) {
-  if (avgDolphins >= avgKoalas * 2) {
-    console.log("Dolphin wins");
-  } else if (avgKoalas >= avgDolphins * 2) {
-    console.log("Koalas win");
-  } else console.log("no winner");
-};
+// const checkWinner = function (avgDolphins, avgKoalas) {
+//   if (avgDolphins >= avgKoalas * 2) {
+//     console.log("Dolphin wins");
+//   } else if (avgKoalas >= avgDolphins * 2) {
+//     console.log("Koalas win");
+//   } else console.log("no winner");
+// };
 
-checkWinner(dolphinsAvg, koalasAvg);
+// checkWinner(dolphinsAvg, koalasAvg);
+
+//Data structures: Array
+// const friends = ["Michael", "Steven", "Peter"];
+// const years = new Array(1991, 1984, 2008, 2020); // this is a function array since we called it using the Array function
+// console.log(years);
+
+// console.log(friends.length);
+// console.log(friends[friends.length - 1]); // this lets us grab the last value of the array
+
+//Mutate array
+
+//friends[2] = "Jay";
+//console.log(friends);
+//only primitive value are immutable so if we do (const) but array can mutate even though declare with const but we can't replace the entire array, only the value inside the array.
+
+//onst jonas = ["Jonas", "Candy", 2037 - 1991, friends];
+//console.log(jonas);
+//We can put an array inside an array
+
+// //Exercise
+// const calcAge2 = function (birthYear) {
+//   return 2037 - birthYear;
+// };
+// const years = [1990, 1967, 2002, 2010, 2018];
+
+// console.log(calcAge2(years));
+
+// let ages = [];
+
+// // for loop
+// for (let i = 0; i < years.length; i++) {
+//   ages.push(calcAge2(years[i]));
+// }
+
+// console.log(ages);
