@@ -147,28 +147,54 @@ GOOD LUCK 😀
 
 //Logical Operator
 
-let dolphinScore = (96 + 108 + 89) / 3;
-console.log(dolphinScore);
-let koalaScore = (88 + 91 + 110) / 3;
-console.log(koalaScore);
+// let dolphinScore = (96 + 108 + 89) / 3;
+// console.log(dolphinScore);
+// let koalaScore = (88 + 91 + 110) / 3;
+// console.log(koalaScore);
 
-const winner = dolphinScore > koalaScore ? `Dolphin wins` : `Koala wins`;
+// const winner = dolphinScore > koalaScore ? `Dolphin wins` : `Koala wins`;
 
-dolphinScore = 90;
-koalaScore = 90;
-console.log(winner);
+// dolphinScore = 90;
+// koalaScore = 90;
+// console.log(winner);
 
-if (dolphinScore >= 100 && koalaScore >= 100 && dolphinScore === koalaScore) {
-  console.log(`Draw`);
-} else if (dolphinScore < koalaScore && dolphinScore >= 100) {
-  console.log("Koala wins!");
-} else if (dolphinScore > koalaScore && dolphinScore >= 100) {
-  console.log(`Dolphin wins!`);
-} else {
-  console.log("No one wins");
-}
+// if (dolphinScore >= 100 && koalaScore >= 100 && dolphinScore === koalaScore) {
+//   console.log(`Draw`);
+// } else if (dolphinScore < koalaScore && dolphinScore >= 100) {
+//   console.log("Koala wins!");
+// } else if (dolphinScore > koalaScore && dolphinScore >= 100) {
+//   console.log(`Dolphin wins!`);
+// } else {
+//   console.log("No one wins");
+// }
 
 // let avgScore = function (score1, score2, score3) {
 //   let result = (score1 + score2 + score3) / 3;
 //   return result;
 // };
+
+// const day = "friday";
+
+// switch (day) {
+//   case "monday":
+//     console.log("Plan course structure");
+//     console.log("Go to coding meetup");
+//     break;
+//   case "tuesday":
+//     console.log("Prepare theory videos");
+//     break;
+//   case "wednesday":
+//   case "thursday":
+//     console.log("Write code examples");
+//   case "friday":
+//     console.log("Record videos");
+//     break;
+//   case "saturday":
+//   case "sunday":
+//     console.log("enjoy the weekend");
+//     break;
+//   default:
+//     console.log("Not a valid day");
+// }
+
+// // Switch statement is designed for checking equality (same value then call result and break the code)
