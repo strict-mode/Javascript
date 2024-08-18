@@ -146,3 +146,29 @@ GOOD LUCK 😀
 //Basic Boolean Logic: The and, or & not Operator
 
 //Logical Operator
+
+let dolphinScore = (96 + 108 + 89) / 3;
+console.log(dolphinScore);
+let koalaScore = (88 + 91 + 110) / 3;
+console.log(koalaScore);
+
+const winner = dolphinScore > koalaScore ? `Dolphin wins` : `Koala wins`;
+
+dolphinScore = 90;
+koalaScore = 90;
+console.log(winner);
+
+if (dolphinScore >= 100 && koalaScore >= 100 && dolphinScore === koalaScore) {
+  console.log(`Draw`);
+} else if (dolphinScore < koalaScore && dolphinScore >= 100) {
+  console.log("Koala wins!");
+} else if (dolphinScore > koalaScore && dolphinScore >= 100) {
+  console.log(`Dolphin wins!`);
+} else {
+  console.log("No one wins");
+}
+
+// let avgScore = function (score1, score2, score3) {
+//   let result = (score1 + score2 + score3) / 3;
+//   return result;
+// };
