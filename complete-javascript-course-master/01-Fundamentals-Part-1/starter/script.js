@@ -301,3 +301,23 @@ GOOD LUCK 😀
 // console.log(ages);
 
 //6:56:59 Basic Array Operations (Methodsjj)
+
+//array coding challenge
+
+let food = [125, 255, 44];
+let tips = [];
+let total = [];
+let calcTip = function (food, tip) {
+  for (let i = 0; i < food.length; i++) {
+    let tipConvert = tip / 100;
+    console.log(i);
+    let tipCalc = food[i] * tipConvert;
+    let allTotal = tipCalc + food[i];
+    total.push(allTotal);
+    tips.push(tipCalc);
+  }
+};
+
+console.log(calcTip(food, 15));
+console.log(tips);
+console.log(total);
