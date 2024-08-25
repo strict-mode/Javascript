@@ -304,7 +304,7 @@ GOOD LUCK 😀
 
 //array coding challenge
 
-let food = [125, 255, 44];
+let food = [125, 335, 44];
 let tips = [];
 let total = [];
 let calcTip = function (food, tip) {
@@ -321,3 +321,28 @@ let calcTip = function (food, tip) {
 console.log(calcTip(food, 15));
 console.log(tips);
 console.log(total);
+
+//array coding challenge 2
+// tip 15% of the bill if bill is less or equal to 300, if bigger, tip 20%
+
+const tipsArr = [];
+let calcTip2 = function (food) {
+  const tip15 = 0.15;
+  const tip20 = 0.2;
+  let tips = "";
+  for (let i = 0; i < food.length; i++) {
+    console.log(i);
+    if (food[i] <= 300) {
+      tips = food[i] * tip15;
+      console.log(tips);
+      // tipsArr.push(tips);
+    } else {
+      food[i] * tip20;
+      //tipsArr.push(tips);
+      console.log(tips);
+    }
+  }
+  console.log(tips);
+};
+
+console.log(calcTip2(food));
